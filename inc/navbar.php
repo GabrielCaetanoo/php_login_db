@@ -17,7 +17,7 @@
         </div>
 
         <div class="col text-end">
-            <span><strong>?= $_SESSION['usuario']->usuario ?></strong></span>
+            <span><strong><?= $_SESSION['usuario']->usuario ?></strong></span>
             <span class="mx-2"> | </span>
             <a href="?rota=logout">Sair</a>
         </div>

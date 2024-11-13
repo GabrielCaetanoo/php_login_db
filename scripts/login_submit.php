@@ -2,13 +2,13 @@
 
 // VERIFICA SE TEVE UM POST
 if($_SERVER['REQUEST_METHOD'] !== 'POST'){
-    header('Location: /index.php?rota=login');
+    header('Location: index.php?rota=login');
     exit;
 }
 
 // BUSCAR DADOS DO POST
 
-$usuario = $_POST['text_usuaruio'] ?? null;
+$usuario = $_POST['text_usuario'] ?? null;
 $senha = $_POST['text_senha'] ?? null;
 
 // VALIDAÇÃO DOS DADOS
